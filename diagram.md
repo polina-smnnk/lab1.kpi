@@ -1,3 +1,6 @@
+# ER-модель EduFlow
+
+```mermaid 
 erDiagram
     User {
         UUID id PK
