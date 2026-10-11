@@ -1,7 +1,6 @@
 erDiagram
-    User { Int id PK }
-    Course { Int id PK }
-    User_Course { Int user_id FK, Int course_id FK }
-    Module { Int id PK, Int course FK }
-    User ||--o{ User_Course : ""
-    Course ||--o{ User_Course : ""
+    User { UUID id PK, String email }
+    Course { UUID id PK, String title, UUID author_id FK }
+    Module { UUID id PK, String title, UUID course_id FK }
+    User }o--o{ Course : "enrolled_in"
+    Course ||--|{ Module : "contains"

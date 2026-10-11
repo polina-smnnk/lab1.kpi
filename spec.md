@@ -1,5 +1,4 @@
-# Специфікація EduFlow 
-* User: id (Int), email
-* Course: id (Int), title
-* User_Course: user_id, course_id
-* Module: id (Int), course (Int)
+# Специфікація EduFlow
+* 3NF дотримано.
+* Виключно UUID для всіх ID.
+* Чистий M:N зв'язок User та Course.
